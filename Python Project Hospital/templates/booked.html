@@ -1,0 +1,33 @@
+<head>
+    <title>Room Booked</title>
+    <h1 style="color:green;">
+        Room Booked. Please proceed for admission.
+    </h1>
+</head>
+<body>
+
+    <br>
+    Remaining Availability of Rooms:
+
+    <table>
+        <thead>
+        <tr>
+            <th>TYPE</th>
+            <th>QUANTITY</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+                <tr>
+                    <td>{{row[0]}}</td>
+                    <td>{{row[1]}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <br>
+    To Book Another Room Click
+    <a href="{{url_for('index')}}"> Here</a>
+
+</body>

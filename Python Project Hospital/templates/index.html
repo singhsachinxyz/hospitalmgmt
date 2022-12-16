@@ -1,0 +1,28 @@
+<head>
+    <title>
+        Hospital Booking Portal
+    </title>
+    <style>
+        h1{text-align: center;}
+    </style>
+    <h1 style="color:blue;">
+        Hospital Booking Portal
+    </h1>
+</head>
+<style>
+    body{text-align: center;}
+</style>
+<body>
+
+    <form method="POST" action="">
+        Select Room Type You Want To Book (Normal/Oxygen/ICU):
+        <select name="roomtype" id="roomtype">
+            <option value="Normal">Normal</option>
+            <option value="Oxygen">Oxygen</option>
+            <option value="ICU">ICU</option>
+        </select>
+        <input type="submit"/>
+    </form>
+    <br>
+    To Update Rooms in Database Click <button onclick="document.location='updaterooms'">Update Rooms</button>
+</body>
